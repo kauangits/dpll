@@ -61,7 +61,7 @@ def ler(nome_arquivo):
             elif linha.startswith('p'):
                 continue  
             else:
-                clausula = [int(x) for x in linha.split() if x != '0' and x != '']  # Ignora '0' e valores vazios
+                clausula = [int(x) for x in linha.split() if x != '0' and x != ''] 
                 if clausula:
                     clausulas.append(clausula)
     return clausulas
